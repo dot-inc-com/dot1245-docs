@@ -25,6 +25,6 @@ dot1245です。学生です。
 ## Fourth: このサービスについて
 このサーバーは[GNU/Linux Debian](https://www.debian.org/)及び[Arch Linux](https://archlinux.org/)を使用しています。  
 このドキュメントは[Vitepress](https://vitepress.dev/)を使用しています。  
-バックエンドに[Cloudflare Pages](https://www.cloudflare.com/)を使用しています。  
+バックエンドに[Cloudflare Pages](https://www.cloudflare.com/)と[Github actions](https://github.com/features/actions)を使用しています。  
 バージョン管理に[Github](https://github.com/)を使用しています。  
 その他開発に[Google Gemini](https://gemini.google.com)を使用しています。  
