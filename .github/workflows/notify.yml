@@ -2,43 +2,47 @@ name: Discord Notification System
 
 on:
   push:
-    branches: [ "main" ] # mainブランチにプッシュされたら実行
+    branches: [ "main" ]
     paths:
-      - 'Discord/**'     # Discordディレクトリ内の変更時のみ通知
-      - 'Minecraft/**'   # Minecraftディレクトリの変更も対象
-      - 'index.md'       # トップページの変更も対象
+      - 'Discord/**'
+      - 'Minecraft/**'
+      - 'index.md'
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      # 1. リポジトリの情報を読み込む
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 差分を取得するために履歴をすべて取得
 
-      # 2. DiscordへWebhookを送信
+      # 変更されたファイル名を取得して変数に入れる
+      - name: Get changed files
+        id: files
+        run: |
+          # 変更されたファイル名をカンマ区切りで取得
+          FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs | sed 's/ /, /g')
+          echo "list=$FILES" >> $GITHUB_OUTPUT
+
       - name: Send Discord Webhook
         uses: tsickert/discord-webhook@v7.0.0
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "dot.inc System"
-          # 直リンク形式のURLに変更
           avatar-url: "https://raw.githubusercontent.com/dot-1245/dot1245-docs/main/public/ICON.png"
           
-          # 通知のメイン設定
-          embed-title: "📜 Docs is updated!"
+          # タイトルに変更されたファイル名を入れる
+          embed-title: "📜 ${{ steps.files.outputs.list }} is updated!"
           embed-url: "${{ github.event.compare }}" 
-          embed-color: 16753920 # 山吹色 (Hex: FFBF00)
+          embed-color: 16753920
           
-          # 内容の詳細（変数のスペースを修正）
           embed-description: |
-            **📄 Update Info:**
+            **📄 Message:**
             ${{ github.event.head_commit.message }}
             
             **🔗 Links:**
-            [Check DIFF](${{ github.event.compare }})
-            [Docs](https://docs.dot1245.net/)
+            [Check DIFF](${{ github.event.compare }}) | [Docs](https://docs.dot1245.net/)
             
-          # フッターとタイムスタンプ
           embed-footer-text: "System managed by dot1245 | SHA: ${{ github.sha }}"
           embed-timestamp: ${{ github.event.head_commit.timestamp }}
