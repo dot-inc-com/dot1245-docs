@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-    name: "dot1245's document"
-    text: "MinecraftやDiscord、その他数多のドキュメントを纏めています"
+    name: "dot.inc"
+    text: "Welcome to dot.inc official Documents"
     tagline: ""
     image:
     	src: /public/ICON.png
