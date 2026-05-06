@@ -23,7 +23,7 @@ const vitePressOptions = {
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/dot-1245/dot1245-docs' },
-      { icon: 'discord', link: 'https://discord.gg/Jr5897ruGs' }
+      { icon: 'discord', link: 'https://d.dot1245.net/' }
     ]
   }
 }
