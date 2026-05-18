@@ -5,8 +5,8 @@ const vitePressOptions = {
   title: "dot1245's document",
   description: "document about me and my stuff or services.",
   head: [
-      ['link', { rel: 'icon', href: '/public/ICON.png' }] // Do Not Change
-    ],
+    ['link', { rel: 'icon', href: '/public/ICON.png' }] // Do Not Change
+  ],
   themeConfig: {
     logo: '/ICON.png',
 
@@ -14,7 +14,6 @@ const vitePressOptions = {
     search: {
       provider: 'local'
     },
-
 
     editLink: {
       pattern: 'https://github.com/dot-1245/dot1245-docs/edit/main/:path',
@@ -28,8 +27,16 @@ const vitePressOptions = {
   }
 }
 
+
 export default defineConfig(withSidebar(vitePressOptions, {
-  documentRootPath: '/*',
+  documentRootPath: '/', 
+
+
+  excludeFiles: ['Readme.md'], 
+
+
+  useDirectoriesAsObjectKeys: true,
+
   collapsed: false,
   useTitleFromFileHeading: true,
 }))
