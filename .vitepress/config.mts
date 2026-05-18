@@ -38,5 +38,5 @@ export default defineConfig(withSidebar(vitePressOptions, {
   useDirectoriesAsObjectKeys: true,
 
   collapsed: false,
-  useTitleFromFileHeading: true,
+  useTitleFromFileHeading: false,
 }))
