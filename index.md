@@ -7,7 +7,7 @@ hero:
     text: "Welcome to dot.inc official Documents"
     tagline: ""
     image:
-    	src: /public/ICON.png
+    	src: /ICON.png
     	alt: dot1245's icon
     actions:
         - theme: brand
