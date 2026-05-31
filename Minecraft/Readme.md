@@ -1,8 +1,8 @@
 # Minecraft: Readme
 
 ## First: このサーバーについて
-このサーバーは[dot1245](https://dot1245.net/)の運営する個人サーバーです。
-このサーバーは今のところ発展させる予定は**ありません**。
+このサーバーは[dot1245](https://dot1245.net/)の運営する個人サーバーになる予定です。
+このサーバーは今のところ発展させる予定はありません。というか、ぶっちゃけた話運営リソースを考えるとセルフホストか有料が当然なマイクラサーバーには到底手が回りません。
 ::: tip 将来的に。。。
 将来的に手を加えて何らかのコミュニティサーバーとして発展させる可能性も十分ありますが、
 
@@ -14,23 +14,9 @@
 [ルール](./Rules)を参照してください。
 このルールは事前に予告することなく変更することがあります。
 このサーバーを利用する場合には必ずルールを読み、同意する必要があります。
-このルールは日本国法やDiscord等の利用規約の範囲内に適用されます。矛盾がある場合このルール**ではないほう**が優先されます。
-
-## Third: 運営者について
-dot1245です。学生です。
-[ホームページ](https://dot1245.net/)
-メールアドレス dot1245@proton.me
-
-## Fourth: このサービスについて
-このサーバーは[GNU/Linux Debian](https://www.debian.org/)及び[Arch Linux](https://archlinux.org/)を使用しています
-
-このサーバーは[Paper](https://papermc.io/)を[itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server/)上で使用しています。
-
-このドキュメントは[Vitepress](https://vitepress.dev/)を使用しています。
-
-バックエンドに[Cloudflare Pages](https://www.cloudflare.com/)を使用しています。
-
-
-バージョン管理に[Github](https://github.com/)を使用しています。
-
-その他開発に[Claude](https://claude.ai/)と[Google Gemini](https://gemini.google.com)を使用しています
+このルールは日本国法やDiscord、Minecraft等の利用規約の範囲内に適用されます。矛盾がある場合このルール**ではないほう**が優先されます。
+## Third: その他備考等
+このReadmeは[Discordのreadme](../Discord/Readme)をベースにしています。  
+編集ズレがあるかも知れませんが、各々の項目は各々のReadme及びRulesを適用することとします。  
+端的に言うと、DiscordにはDiscordフォルダ内の文章が、MinecraftにはMinecraftフォルダ内の文章が適用されるという意味です。
+###### まあ、別にマイクラサーバーなんてないのでこのカテゴリの意味は特に無いんですがね。隠すのもめんどくさいので半分放置という形の公開です
