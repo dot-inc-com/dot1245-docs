@@ -16,12 +16,12 @@ const vitePressOptions = {
     },
 
     editLink: {
-      pattern: 'https://github.com/dot-1245/dot1245-docs/edit/main/:path',
+      pattern: 'https://github.com/dot-inc-com/dot1245-docs/edit/main/:path',
       text: 'Edit this page on GitHub'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dot-1245/dot1245-docs' },
+      { icon: 'github', link: 'https://github.com/dot-inc-com/dot1245-docs' },
       { icon: 'discord', link: 'https://d.dot1245.net/' }
     ]
   }
