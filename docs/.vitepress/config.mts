@@ -29,10 +29,9 @@ const vitePressOptions = {
 
 
 export default defineConfig(withSidebar(vitePressOptions, {
-  documentRootPath: '', 
+  documentRootPath: 'docs', 
 
 
-  ignoreList: ['README.md'], 
 
 
   useDirectoriesAsObjectKeys: true,
