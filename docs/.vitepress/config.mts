@@ -29,7 +29,7 @@ const vitePressOptions = {
 
 
 export default defineConfig(withSidebar(vitePressOptions, {
-  documentRootPath: 'docs', 
+  documentRootPath: '.', 
 
 
 
